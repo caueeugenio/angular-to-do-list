@@ -15,7 +15,7 @@ import { IUser } from './interfaces/user-interface';
 })
 export class AppComponent {
   public users = DUMMY_USERS;
-  private selectedUserId?: string;
+  public selectedUserId?: string;
 
   get selectedUser() {
     return this.users.find((user) => user.id === this.selectedUserId);
